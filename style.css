@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+   
+    height: 7vh;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   background-color: rgb(65, 65, 108);
+   color:antiquewhite;
+   padding: 10px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    /* background-color:blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw) ;
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 0px;
+}
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+}
+
+.bt-0{
+    border-top: 0px;
+}
+
+.bl-0{
+    border-left: 0px;
+}
+
+.br-0{
+    border-right: 0px;
+}
+
+.bb-0{
+    border-bottom: 0px;
+}
+
+.box:hover{
+    background-color: aqua;
+}
+
+.info{
+    padding: 0px 15px;
+    font-family: cursive;
+}
+
+.turnInfo{
+    margin-top: 10 px;
+    
+}
+
+.imgbox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+#reset{
+    margin-left: 10px;
+    padding: 0px 5px;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(192, 192, 251);
+}
+
+@media screen and (max-width: 700px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .info{
+       margin-top: 20px;
+       font-size: 1rem;
+    }
+    .container{
+        grid-template-rows: repeat(3, 20vw) ;
+        grid-template-columns: repeat(3, 20vw); 
+    }
+}
